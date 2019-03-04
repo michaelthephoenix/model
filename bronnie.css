@@ -1,0 +1,10 @@
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  height: 50%;
+  margin: auto;
+}
+.navbar {
+  margin-bottom: 0;
+
+}

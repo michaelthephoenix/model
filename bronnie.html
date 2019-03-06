@@ -55,6 +55,32 @@
         #blog{
                 background-color: lavender;
             }
+        #intro{
+            background-color: darkslateblue;
+            color: white;
+        }
+        #do{
+            position: relative;
+            background-color: #eee;
+        }
+        .col-sm-4{
+            background-color: white;
+            padding-left:0;
+            padding-right: 0;
+
+            margin-top: 8px;
+            margin-bottom: 10px;
+        }
+        .col-sm-4 .text-box{
+            position:absolute;
+            bottom: 47%;
+            left: 20%;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            padding: 20px;
+            font-size: 34px;
+        }
     </style>
 </head>
 <body>
@@ -70,7 +96,7 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Profession</a></li>
+                    <li><a href="#">Work</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -113,19 +139,23 @@
             </a>
         </div>
     </div>
-    <!-- about her profesion -->
+    <!-- about her work -->
+    <div class="container-fluid" id="intro">
+        <h2 class="text-center">Hi, I'm Kusiima Bronnie</h2>
+
+    </div>
     <!-- what means the world to me -->
-    <div class="container" id="world">
-        <div class="jumbotron">
-            <h2 class="text-center">what means the world to me</h2>
-            <div class="thumbnail">
-                <img src="doctor.jpg" alt="" width="533" height="300" class="img-responsive">
-                <div class="caption">
-                    helping people
+        <div class="container-fluid" id="do">
+            <h2 class="text-center">what i do</h2>
+            <div class="col-sm-4">
+                <img src="runway.jpg" class="img-responsive" alt="">
+                <div class="text-box">
+                    <p>MODEL</p>
                 </div>
             </div>
+            <div class="col-sm-4"><img src="baller.jpg" class="img-responsive" alt=""><p>play basketball</p></div>
+            <div class="col-sm-4"><img src="hag.jpg" class="img-responsive" alt=""><p>hagout with friends</p></div>
         </div>
-    </div>
     <!-- the blog -->
     <div class="container" id="blog">
             <h4><small>RECENT POSTS</small></h4>

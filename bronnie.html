@@ -15,6 +15,52 @@
             margin-bottom: 0;
             border-radius: 0;
         }
+        .jumbotron{
+            border-radius: 0;
+        }
+        #hmm{
+            height: 600px;
+            width: 766px;
+        }
+        #pic3{
+            height: 600px;
+            width:480px;
+        }
+        #pic2{
+            height: 600px;
+            width: 583px;
+        }
+        @media screen and (max-width:768px) {
+            .container{
+                padding: 0;
+            }
+            #pic1{
+                width: 100%;
+                height: 60%;
+            }
+            #pic2{
+                height: 60%;
+            }
+            #pic3{
+                height: 60%;
+            }
+            #hmm{
+                height: 80%;
+            }
+            #world > h1{
+                text-align: center;
+            }
+            #blog > img{
+                border-radius: 4px;
+            }
+
+        }
+        #blog{
+                background-color: lavender;
+            }
+        hr{
+            
+        }
     </style>
 </head>
 <body>
@@ -44,19 +90,23 @@
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1" ></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
 
             <!-- wrapper of slidee -->
-            <div class="carousel-inner">
+            <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="b.jpg" alt="" >
+                    <img src="b.jpg" alt="" id="pic1">
                 </div>
                 <div class="item">
-                    <img src="inseat2.png" alt="">
+                    <img src="bronnie0.png"  alt="" id="pic2">
                 </div>
                 <div class="item">
-                    <img src="wq.jpg" alt="" height="600" width="480">
+                    <img src="wq.jpg" alt="" id="pic3">
                 </div>
+                <div class="item">
+                        <img src="b11.png" alt="" id="hmm">
+                    </div>
             </div>
             <!-- controls -->
             <a href="#myCarousel" data-slide="prev" class="left carousel-control" role="button">
@@ -69,24 +119,50 @@
             </a>
         </div>
     </div>
-    <!-- the blog -->
-    <div class="container">
-        <div class="container">
-                <h2>this is me</h2><hr/>
-                <p>hi there, my name is Kusiima Bronnie Divine am I am 18 years old and have just completed my
-                     high school and am on my vacation. This has been a refreshing touch in my life because I 
-                     got to spend quality time with family and friends while caring less about biology and chemistry.</p>
-                <p>
-                I resumed my career as a model at Cavalli Modelling Agency, this has been a fascinating experience
-                 and love every single moment of it. When am not on the runway then you can always find me on the court,
-                  basketball is my first love when it comes to sports. I am in that situation where it is more than just
-                   a game you could say I live it, love it and play it.</p><p>
-                but as more time unfolds, am working towards building a more passionate, caring and driven personality
-                 so as to accomplish my goals and positive influence the people around me.</p><p>
-                It is so far a wonderfully great time mostly because of God's love that has been with me for every
-                 step of the way, he makes each day a blessing certain to make them count.</p>
+    <!-- about her profesion -->
+    <!-- what means the world to me -->
+    <div class="container" id="world">
+        <div class="jumbotron">
+            <h2 class="text-center">what means the world to me</h2>
+            <div class="thumbnail">
+                <img src="doctor.jpg" alt="" width="533" height="300" class="img-responsive">
+                <div class="caption">
+                    helping people
+                </div>
+            </div>
         </div>
     </div>
+    <!-- the blog -->
+    <div class="container" id="blog">
+            <h4>RECENT POSTS</h4>
+                <div class="col-sm-8">
+                        <svg height="5" width="500">
+                                <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(255,0,0);stroke-width:5" />
+                                Sorry, your browser does not support inline SVG.
+                              </svg>
+                    <h2>About me</h2>
+                    <h5 class="text-info"><span class="glyphicon glyphicon-time"></span>Post by Kusiima Bronnie, March 06, 2019</h5>
+                    <p>hi there, my name is Kusiima Bronnie Divine am I am 18 years old and have just completed my
+                        high school and am on my vacation. This has been a refreshing touch in my life because I 
+                        got to spend quality time with family and friends while caring less about biology and chemistry.</p>
+                    <p>
+                    I resumed my career as a model at Cavalli Modelling Agency, this has been a fascinating experience
+                    and love every single moment of it. When am not on the runway then you can always find me on the court,
+                    basketball is my first love when it comes to sports. I am in that situation where it is more than just
+                    a game you could say I live it, love it and play it.</p><p>
+                    but as more time unfolds, am working towards building a more passionate, caring and driven personality
+                    so as to accomplish my goals and positive influence the people around me.</p><p>
+                    It is so far a wonderfully great time mostly because of God's love that has been with me for every
+                    step of the way, he makes each day a blessing certain to make them count.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="happy.jpg" height="600" width="450" alt="" class="img-responsive img-rounded">
+                </div>
+
+    </div>
+    <footer class="container-fluid">
+        <p>footer</p>
+    </footer>
     
 </body>
 </html>
